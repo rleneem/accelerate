@@ -1,0 +1,13 @@
+﻿<parameters>
+  <parameter name="AppPath" defaultValue="Generic App" tags="iisapp">
+    <parameterValidation kind="AllowEmpty" />
+    <parameterEntry kind="ProviderPath" scope="iisapp" match="|AppPath|" />
+  </parameter>
+  <parameter name="Parameter 5474628752312025820" friendlyName="Local Application URL" description="The URL of the application on the target box such as http://www.myserver.com/myapp ." defaultValue="" tags="AppURL">
+    <parameterValidation kind="AllowEmpty" />
+    <parameterEntry kind="TextFile" scope="dbFullSql|dbMySql|dbSqlite" match="http://localhost:?[0-9]*" />
+    <parameterEntry kind="TextFile" scope="dbFullSql|dbMySql|dbSqlite" match="http://127.0.0.1:?[0-9]*" />
+    <parameterEntry kind="TextFile" scope="dbFullSql|dbMySql|dbSqlite" match="http://USER-PC:?[0-9]*" />
+  </parameter>
+  <parameter name="WebPIApplicationID 7e7452d3-3619-4c6a-89c8-5df644309f10" friendlyName="WebPIApplicationID 7e7452d3-3619-4c6a-89c8-5df644309f10" defaultValue="GenericPHP53FromFolderApp" tags="WebPIApplicationID" />
+</parameters>
