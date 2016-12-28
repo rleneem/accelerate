@@ -2,6 +2,4 @@
 .DS_Store
 wp-config.php
 .htaccess
-wp-content/plugins/
-wp-content/uploads/wp-migrate-db/index.php
 wp-content/uploads/
