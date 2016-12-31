@@ -1,0 +1,16 @@
+<aside class="case-study-sidebar">
+<h2>Mailchimp Campaign</h2>
+<h5>Content Strategy, Design & Development</h5>
+<h6>Client: MailChimp</h6>
+
+</aside>
+
+<div class="case-study-images">
+
+<img src="http://localhost:7985/wp-content/uploads/2016/12/mailchimp1-300x221.png" alt="" width="300" height="221" class="alignnone size-medium wp-image-47359" />
+
+<img src="http://localhost:7985/wp-content/uploads/2016/12/mc-thumbnail-2-223x300.png" alt="" width="223" height="300" class="alignnone size-medium wp-image-47360" />
+
+<img src="http://localhost:7985/wp-content/uploads/2016/12/mc-thumbnail-3-150x300.png" alt="" width="150" height="300" class="alignnone size-medium wp-image-47361" />
+
+</div>
