@@ -31,7 +31,6 @@ body {
 #masthead nav ul li {
 	float:left;
 	margin:0 10px;
-	
 }
 
 /* blog post on homepage */
@@ -82,3 +81,27 @@ div.case-study-images img {
 	margin-bottom:50px;
 	border:1px solid #dddddd;
 }
+
+/* Featured Work */
+
+.featured-work h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.individual-featured-work {
+	display: inline-block;
+	width: 30%;
+	padding: 0 24px 0 4px;
+	font-family: 'Montserrat';
+}
+	
+.individual-featured-work h3 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: normal;
+
+}
+
