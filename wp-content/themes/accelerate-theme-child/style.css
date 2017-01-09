@@ -33,6 +33,10 @@
 	margin:0;
 }
 
+.top-nav {
+	position: relative;
+}
+
 nav-menu ul li {
 	float:left;
 	margin:0 30px;
@@ -139,7 +143,87 @@ div.case-study-images img {
 	text-align: center;
 	font-size: 18px;
 	font-weight: normal;
+}
 
+/* Contact Page and Ninja Contact Form */
+/*
+.contact-us {
+	width: 72%;
+	margin: 50px auto;
+} */
+
+.site-content .nf-form-cont {
+	width: 70%;
+	margin: 50px auto;
+} 
+
+
+
+/* Ninja contact form */
+#nf-field-1 {
+	height: 2.5em;
+	border: 1.5px solid #909090;
+}
+#nf-field-2 {
+	height: 2.5em;
+	border: 1px solid #909090;
+}
+#nf-field-3 {
+	height: 10.5em;
+	border: 1px solid #909090;
+}
+.nf-field-label {
+	font-size: .8em;
+	color: #666;
+}
+
+/* Contact Form Send button */
+#nf-field-4 {
+	float: right;
+	background-color: #45ac9d;
+	color: #fff;
+	width: 12.5em;
+	font-size: 1em;
+	font-weight: normal;
+	padding: 1.1em;
+}
+
+/* About Services */
+
+article.service {
+	clear: both;
+	margin:40px 0 0;
+}
+
+aside.service-sidebar {
+	float: left;
+	width: 60%;
+	margin:0 40px 0 0;
+}
+
+aside.service-sidebar h5 {
+    color: #999;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.33333;
+    margin: 0 0 12px;
+}
+
+aside.service-sidebar h6 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin: 0 0 50px;
+}
+
+div.service-images {
+	float:left;
+	width:606px;
+}
+
+div.service-images img {
+	border: 1px solid #dddddd;
+	margin-bottom: 100px;
 }
 
 /* Footer Styles */
