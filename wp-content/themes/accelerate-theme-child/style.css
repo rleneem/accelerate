@@ -29,20 +29,20 @@
 	margin: 0;
 }
 
-.nav-menu {
-	margin:0;
-}
-
-.top-nav {
-	position: relative;
-}
-
 nav-menu ul li {
 	float:left;
-	margin:0 30px;
+	margin:0;
 	text-transform:uppercase;
+	color: black;
 }
 
+.site-header .site-navigation li{
+	margin: 0 30px 0 0;
+	display:inline;
+	float:right;
+	text-transform:uppercase;
+	text-decoration:none;
+}
 
 /* blog post on homepage */
 
@@ -146,20 +146,19 @@ div.case-study-images img {
 }
 
 /* Contact Page and Ninja Contact Form */
-/*
-.contact-us {
-	width: 72%;
-	margin: 50px auto;
-} */
 
 .site-content .nf-form-cont {
 	width: 70%;
 	margin: 50px auto;
 } 
 
-
+.contact {
+	width: 70%;
+	margin: auto;
+}
 
 /* Ninja contact form */
+
 #nf-field-1 {
 	height: 2.5em;
 	border: 1.5px solid #909090;
@@ -178,6 +177,7 @@ div.case-study-images img {
 }
 
 /* Contact Form Send button */
+
 #nf-field-4 {
 	float: right;
 	background-color: #45ac9d;
