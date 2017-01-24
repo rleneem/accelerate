@@ -1,11 +1,6 @@
 <?php
 /**
- * The template for displaying the about page
- *
- * This is the template that displays the about page.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * This is the About page template
  *
  * @package WordPress
  * @subpackage Accelerate Marketing
@@ -14,51 +9,88 @@
 get_header(); ?>
 
 		<section class="home-page">
-							<?php while ( have_posts()) : the_post(); ?>
-				<div class="about-hero">
-					<h3>Accelerate is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.</h3>
-				</div>
-				<?php endwhile; ?>
-			</div>	
-		</section>		
-				
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-					
-			
-			<div class="page-content">
-			<?php query_posts('posts_per_page=4&post_type=our_services'); ?>	
-				<?php while ( have_posts() ) : the_post(); 
-					$service = get_field('title');
-					$description = get_field('description');
-					$icon = get_field('icon');
+				<?php while ( have_posts()) : the_post(); ?>
+					<div class="hero-text">
+						<h3><?php the_content(); ?></h3>
+					</div>		
+				<?php endwhile; // end of the loop ?>		
+		</section><!-- closes home-page section -->		
+		
+	<div class="site-content">
+	
+		<section class="about-intro">			
+				<?php while (have_posts() ) : the_post();
+					$title = get_field('services_intro');
+					$description = get_field('services_description');
 					$size = "full";
-				?>
-				
-					<div class="services">
-						<h2><?php the_title(); ?></h2>
-						<h5><?php echo $service; ?></h5>
-						<h6><?php echo $description; ?></h6>
-						<?php the_content(); ?>
+				?>	
+									
+				<div class="services-intro">
+					<div class="about-title">
+						<h2><?php echo $title; ?></h2>
 					</div>
-					<div class="icon-left">
-						<?php echo wp_get_attachment_image( $icon, $size); ?>
+					<div class="about-description">
+						<p><?php echo $description; ?></p>
 					</div>
-				
-				<?php endwhile; // end of the loop. ?>
-			
-			</div><!-- #page-content -->
-		
-			<section class="work-with">
-				<div class="interested">
-					<h4>Interested in working with us?</h4>
-				</div>
-				<div class="contact-btn">	
-					<a class="button" href="<?php echo home_url(); ?>/contact-us">Contact Us</a>
 				</div>		
-			</section>
+		</section><!-- end of aboutpage-top section-->
 		
-		</div><!-- #content -->
-	</div><!-- #primary -->
+
+		<section class="about-services"><!-- begin services section -->
+			
+		<?php query_posts('posts_per_page=5&post_type=our_services'); ?>
+			<?php while ( have_posts() ) : the_post();
+					$title = get_field('title');
+					$desc = get_field('description');
+					$image_1 = get_field('icon');
+					$size = "medium";
+			?>
+			
+				<?php if ($wp_query->current_post % 2 == 0): ?>
+					<div class="services">
+						<div class="icon">
+							<figure>
+								<?php echo wp_get_attachment_image($image_1, $size); ?>
+							</figure>
+						</div><!-- close icon div -->
+						
+						<div class="description">
+							<h2><?php echo $title; ?></h2>
+							<p><?php echo $desc; ?></p>
+						</div><!-- close description div -->		
+					</div><!-- close services div -->	
+
+				<?php else: ?>
+					<div class="services-odd">
+						<div class="description">
+							<h2><?php echo $title; ?></h2>
+							<p><?php echo $desc; ?></p>
+						</div>
+						<div class="icon">
+							<figure>
+								<?php echo wp_get_attachment_image($image_1, $size); ?>
+							</figure>
+						</div>
+					</div>
+
+				<?php endif; ?>
+				<?php endwhile; //end of the loop ?>
+				
+				<?php wp_reset_query(); // resets the altered query back to the original ?>
+			
+			<?php endwhile; ?>
+			
+		</section><!--end services section-->								
+	
+		<section class="about-contact">
+				<div class="contact-description">
+					<h4>Interested in working with us?</h4>
+				</div>	
+				<div class="contact-button">	
+						<a class="button" href="<?php echo home_url(); ?>/contact_us">Contact Us</a>
+				</div>
+		</section>	
+	</div><!-- close div .site-content -->	
+	
 
 <?php get_footer(); ?>

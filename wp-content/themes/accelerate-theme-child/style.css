@@ -47,6 +47,38 @@ nav-menu ul li {
 	text-decoration: none;
 }
 
+.nav-menu .current-menu-item >a,
+.nav-menu .current_page_item > a {
+	font-weight: bold;
+}
+
+/* Featured Work on homepage */
+
+.featured-work {
+	overflow:auto;
+}
+.featured-work h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+	text-align: center;
+	margin:0 0 40px;
+}
+.featured-work ul {
+	margin:0 auto;
+}
+.individual-featured-work {
+	display: inline-block;
+	float: left;
+	list-style-type: none;
+	width: 30%;
+	padding: 0 24px 0 4px;
+}	
+.individual-featured-work h3 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: normal;
+}
 
 /* blog post on homepage */
 
@@ -118,39 +150,65 @@ div.case-study-images img {
 }
 
 /* About Page */
-
-
-
-/* Featured Work */
-
-.featured-work {
-	overflow:auto;
+/* Hero pic */
+.home-page {
+    height: 360px;
+    padding-top: 1px;
+}
+.hero-text h3 {
+    max-width: 550px;
+    margin: 0 auto;
+    padding-top: 3.5em;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 0.75px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: normal;
 }
 
-.featured-work h4 {
-	font-size: 16px;
-	font-family: 'Montserrat';
-	text-transform: uppercase;
+/* Services Intro */
+.services-intro {
 	text-align: center;
-	margin:0 0 40px;
+	margin-bottom: 50px;
+}
+.about-title {
+	padding-bottom: 10px;
+}
+/* Services */
+.services,
+.services-odd {
+    overflow: auto;
+}
+.services .icon {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+}
+.services-odd .icon {
+    float: right;
+    width: 30%;
+    margin-left: 2%;
+}
+.description {
+    float: left;
+    width: 68%;
 }
 
-.featured-work ul {
-	margin:0 auto;
+/* About Page Contact Section */
+.about-contact {
+	margin-top: 50px;
+    border-top: 1px dotted #e3e1e1;
+	text-align: center;
 }
-
-.individual-featured-work {
+.contact-description {
+	margin-top: 30px;
 	display: inline-block;
-	float: left;
-	list-style-type: none;
-	width: 30%;
-	padding: 0 24px 0 4px;
 }
-	
-.individual-featured-work h3 {
-	text-align: center;
-	font-size: 18px;
-	font-weight: normal;
+.contact-button {
+	margin-left: 10%;
+	display: inline-block;
 }
 
  /* Contact Page and Ninja Contact Form */
@@ -191,7 +249,6 @@ div.case-study-images img {
 .site-description a{
 	color: #45ac9d;
 }
-
 .social-media-menu li {
 	float: left;
 	margin:0 5px;
