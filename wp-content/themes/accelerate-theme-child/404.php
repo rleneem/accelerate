@@ -1,6 +1,6 @@
 <?php
 /**
- * This is the template for the success page
+ * Template for the 404 page
  *
  *
  * @package WordPress
@@ -12,10 +12,10 @@ get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-			<div class="success-page">
+		
+			<div class="404-page">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<h2>Success!</h2>
-					<?php the_content(); ?>
 				<?php endwhile; // end of the loop. ?>
 			</div>
 		</div><!-- #content -->

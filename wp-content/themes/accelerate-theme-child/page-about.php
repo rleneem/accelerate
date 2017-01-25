@@ -87,7 +87,7 @@ get_header(); ?>
 					<h4>Interested in working with us?</h4>
 				</div>	
 				<div class="contact-button">	
-						<a class="button" href="<?php echo home_url(); ?>/contact_us">Contact Us</a>
+					<a class="button" href="<?php echo home_url(); ?>/contact">Contact Us</a>
 				</div>
 		</section>	
 	</div><!-- close div .site-content -->	
