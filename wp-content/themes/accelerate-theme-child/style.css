@@ -122,6 +122,7 @@ nav-menu ul li {
 	float: right;
 }
 .simple-tweets h4 {
+	clear: both;
 	font-size: 16px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;

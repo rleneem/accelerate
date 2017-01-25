@@ -9,7 +9,6 @@
  */
 
 get_header(); ?>
-Test
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
