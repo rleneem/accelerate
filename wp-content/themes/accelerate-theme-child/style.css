@@ -115,6 +115,11 @@ nav-menu ul li {
 	overflow: hidden;
 }
 
+/* Social Sharing Icons */
+.ssba {
+  padding-top: 10px;
+}
+
 /* simple tweets on homepage */
 .simple-tweets {
 	padding: 2% 0 0 5%;
