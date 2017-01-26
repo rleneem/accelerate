@@ -1,7 +1,6 @@
 <?php
 /**
- * Template for the 404 page
- *
+ * The template for displaying 404 pages (Not Found)
  *
  * @package WordPress
  * @subpackage Accelerate Marketing
@@ -10,13 +9,19 @@
 
 get_header(); ?>
 
-	<div id="primary" class="site-content">
-		<div id="content" role="main">
-		
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
 			<div class="404-page">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<h2>Success!</h2>
-				<?php endwhile; // end of the loop. ?>
+				<div class="404_image">
+					<figure>
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/lionel.jpg"/> 
+					</figure>
+				</div>
+				<div class="text_404">
+					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?'); ?></p>
+					<?php get_search_form(); ?>
+				</div><!-- .page-content -->
 			</div>
 		</div><!-- #content -->
 	</div><!-- #primary -->
