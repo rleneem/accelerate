@@ -368,17 +368,47 @@ div.case-study-images img {
 }
 
 /* 404 Page */
-.image_404 img  {
+.page-header img {
     height: 500px;
     background: no-repeat scroll left center/ cover rgba(0, 0, 0, 0);
     border: 3px solid #45AC9D;
-	width: 80%;
+	width: 100%;
+	
 }
 .text_404 {
     padding-top: 20px;
     font-family: 'Montserrat';
-    color: #45AC9D;
+    color: #333;
     text-align: center;
+}
+.text_404 h2 {
+	color: #45AC9D;
+}
+.404-page h3 {
+	text-align: center;
+	font-family: 'Montserrat';
+}
+
+.col1, .col2 {
+	width: 45%;
+	float: left;
+	padding: 0px 10px 10px 10px;
+	margin: 0px;
+	font-family: 'Montserrat';
+	font-size: 16px;	
+}
+.col2 {
+	list-style-type: none;
+}
+.col2:after {
+	clear:both;
+}
+.col-header {
+	background: #45AC9D;
+	color: #FFF;
+	margin: 0px;
+	padding: 1px;
+	text-align: center;
 }
 
 /* Footer Styles */
